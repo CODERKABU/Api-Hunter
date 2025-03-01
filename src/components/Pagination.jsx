@@ -42,11 +42,11 @@ function Pagination({ currentPage, totalPosts, postsPerPage, onPageChange }) {
   return (
     <div className="pagination">
       <button
-        className="pagination-button bg-sky-200"
+        className="pagination-button"
         onClick={() => onPageChange(currentPage - 1)}
         disabled={currentPage === 1}
       >
-        <ChevronLeftIcon className="pagination-icon" />
+        <ChevronLeftIcon className="pagination-icon bg-sky-200" />
       </button>
 
       {renderPageNumbers().map((page, index) => (
@@ -63,11 +63,11 @@ function Pagination({ currentPage, totalPosts, postsPerPage, onPageChange }) {
       ))}
 
       <button
-        className="pagination-button bg-sky-200"
+        className="pagination-button"
         onClick={() => onPageChange(currentPage + 1)}
         disabled={currentPage === totalPages}
       >
-        <ChevronRightIcon className="pagination-icon" />
+        <ChevronRightIcon className="pagination-icon bg-sky-200" />
       </button>
     </div>
   );
