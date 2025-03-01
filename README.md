@@ -1,12 +1,34 @@
-# React + Vite
+# API-Hunter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+API-Hunter is a web application built with React and Vite that allows users to search and explore various APIs efficiently.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Fast and Responsive:** Leveraging Vite's rapid build times and React's component-based architecture.
+- **User-Friendly Interface:** Intuitive design for seamless navigation and API discovery.
+- **Real-Time Search:** Instant results as you type, enhancing user experience.
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend:** React, Vite
+- **Styling:** Tailwind CSS
+- **State Management:** Redux (or Context API, if applicable)
+- **Testing:** Vitest, React Testing Library
+
+## Getting Started
+
+Follow these steps to set up the project locally:
+
+### Prerequisites
+
+Ensure you have the following installed:
+
+- [Node.js](https://nodejs.org/) (version 14 or higher)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
+### Installation
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/your-username/API-Hunter.git
