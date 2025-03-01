@@ -40,21 +40,21 @@ function Pagination({ currentPage, totalPosts, postsPerPage, onPageChange }) {
   };
 
   return (
-    <div className="pagination">
+    <div className="flex items-center justify-center space-x-2 mt-4">
       <button
-        className="pagination-button"
+        className="p-2 rounded-md bg-gray-200 hover:bg-gray-300 disabled:opacity-50"
         onClick={() => onPageChange(currentPage - 1)}
         disabled={currentPage === 1}
       >
-        <ChevronLeftIcon className="pagination-icon bg-sky-200" />
+        <ChevronLeftIcon className="h-5 w-5 text-gray-50" />
       </button>
 
       {renderPageNumbers().map((page, index) => (
         <button
           key={index}
-          className={`pagination-button ${
-            page === currentPage ? "active" : ""
-          } ${page === "..." ? "ellipsis" : ""}`}
+          className={`px-3 py-1 rounded-md text-sm font-medium transition-all 
+            ${page === currentPage ? "bg-blue-500 text-white" : "bg-gray-200 hover:bg-gray-300"} 
+            ${page === "..." ? "cursor-default text-gray-500" : ""}`}
           onClick={() => typeof page === "number" && onPageChange(page)}
           disabled={page === "..."}
         >
@@ -63,11 +63,11 @@ function Pagination({ currentPage, totalPosts, postsPerPage, onPageChange }) {
       ))}
 
       <button
-        className="pagination-button"
+        className="p-2 rounded-md bg-gray-200 hover:bg-gray-300 disabled:opacity-50"
         onClick={() => onPageChange(currentPage + 1)}
         disabled={currentPage === totalPages}
       >
-        <ChevronRightIcon className="pagination-icon bg-sky-200" />
+        <ChevronRightIcon className="h-5 w-5 text-gray-50" />
       </button>
     </div>
   );
